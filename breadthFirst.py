@@ -85,11 +85,11 @@ class Search:
             print("STEP:" + str(step))
             openstr = ""
             for op in open:
-                openstr = openstr + " " + op.getName()
+                openstr = openstr + " " + op.toString()
             print("OPEN:" + openstr)
             closedstr = ""
             for cld in closed:
-                closedstr = closedstr + " " + cld.getName()
+                closedstr = closedstr + " " + cld.toString()
             print("closed:" + closedstr)
 
             if len(open) == 0:
